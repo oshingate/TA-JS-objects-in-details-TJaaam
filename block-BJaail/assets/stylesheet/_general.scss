@@ -1,0 +1,68 @@
+body {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+$pri: rgb(12, 79, 124);
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.sec-padding {
+  padding: 2rem 0;
+}
+input {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btn-pri {
+  background-color: $pri;
+  color: white;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex-40 {
+  flex: 0 1 38%;
+  margin: 1%;
+}
+.flex-25 {
+  flex: 0 1 23%;
+  margin: 1%;
+}
+.flex-10 {
+  flex: 0 1 8%;
+  margin: 1%;
+}
+// first-sec
+
+.first-sec {
+  form {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid $pri;
+    border-radius: 7px;
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// sec-div
+.book-div > * {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.book-header-div {
+  font-weight: 700;
+  font-size: 1.5rem;
+}

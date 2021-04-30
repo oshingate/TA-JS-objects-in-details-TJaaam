@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <script
+      src="https://kit.fontawesome.com/7c7efbb78c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <strong
+        ><span><i class="fas fa-book-open"></i></span> My <span> Book</span>list
+        App</strong
+      >
+    </header>
+    <main>
+      <section class="first-sec sec-padding container">
+        <div class="form-div">
+          <form action="">
+            <fieldset>
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" />
+              <span></span>
+            </fieldset>
+            <fieldset>
+              <label for="author">Author</label>
+              <input type="text" name="author" id="author" />
+              <span></span>
+            </fieldset>
+            <fieldset>
+              <label for="isbn">ISBN#</label>
+              <input type="number" name="isbn" id="isbn" />
+              <span></span>
+            </fieldset>
+            <a class="btn btn-pri addToList" href="#">Submit</a>
+          </form>
+        </div>
+      </section>
+      <section class="second-sec sec-padding container">
+        <div class="book-div">
+          <div class="flex book-header-div">
+            <div class="flex-40">Title</div>
+            <div class="flex-25">Author</div>
+            <div class="flex-25">ISBN#</div>
+            <div class="flex-10"></div>
+          </div>
+          <div class="book-main-div">
+            <!-- <div class="book flex">
+              <div class="flex-40">Title</div>
+              <div class="flex-25">Author</div>
+              <div class="flex-25">ISBN#</div>
+              <div class="flex-10"><i class="far fa-times-circle"></i></div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
