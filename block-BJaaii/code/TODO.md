@@ -28,9 +28,8 @@ Getter
 - `length`: returns the current length of the stack.
 
 ```js
-class Stack extends Array {
+class Stack {
   constructor() {
-    super();
     this.stack = [];
   }
   push(val) {
@@ -99,9 +98,8 @@ Getter
 - `length`: returns the current length of the stack.
 
 ```js
-class Queue extends Array {
+class Queue {
   constructor() {
-    super();
     this.queue = [];
   }
   enqueue(val) {
