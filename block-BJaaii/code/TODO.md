@@ -27,12 +27,46 @@ Getter
 
 - `length`: returns the current length of the stack.
 
+```js
+class Stack extends Array {
+  constructor() {
+    super();
+    this.stack = [];
+  }
+  push(val) {
+    this.stack.push(val);
+  }
+  pop() {
+    this.stack.pop();
+  }
+  peek(i = this.stack.length - 1) {
+    return this.stack[i];
+  }
+  reverse() {
+    return this.stack.reverse();
+  }
+  isEmpty() {
+    if (this.stack.length === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  displayStack() {
+    return this.stack.join(" ");
+  }
+  get length() {
+    return this.stack.length;
+  }
+}
+```
+
 #### Test
 
 ```js
 let myStack = new Stack();
-myStack.push('One');
-myStack.push('Two');
+myStack.push("One");
+myStack.push("Two");
 console.log(myStack.length); // 2
 console.log(myStack.peek()); // "Two"
 console.log(myStack.peek(0)); // "One"
@@ -64,13 +98,45 @@ Getter
 
 - `length`: returns the current length of the stack.
 
+```js
+class Queue extends Array {
+  constructor() {
+    super();
+    this.queue = [];
+  }
+  enqueue(val) {
+    this.queue.push(val);
+  }
+  dequeue() {
+    this.queue.shift();
+  }
+  peek(i = 0) {
+    return this.queue[i];
+  }
+
+  isEmpty() {
+    if (this.queue.length === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  displayQueue() {
+    return this.queue.join(" ");
+  }
+  get length() {
+    return this.queue.length;
+  }
+}
+```
+
 #### Test
 
 ```js
 let atmQueue = new Queue();
-atmQueue.enqueue('Aman');
-atmQueue.enqueue('John');
-atmQueue.enqueue('Rohan');
+atmQueue.enqueue("Aman");
+atmQueue.enqueue("John");
+atmQueue.enqueue("Rohan");
 console.log(atmQueue.displayQueue()); // "Aman John Rohan"
 console.log(atmQueue.length); // 3
 console.log(atmQueue.peek()); // "Aman"
